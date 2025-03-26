@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { IoCloseSharp } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -28,13 +28,16 @@ const Navbar = () => {
         {/* nav item */}
         <nav className="hidden md:flex items-center">
           {navLinks.map((link, index) => (
-            <Link
+            <NavLink
               key={index}
               to={link.path}
-              className="text-black mx-4 hover:text-blue-500"
+              className={({ isActive }) =>
+                isActive ? "text-blue-500 mx-4" :
+              "text-black mx-4"
+              }
             >
               {link.name}
-            </Link>
+            </NavLink>
           ))}
         </nav>
         <div className="hidden md:flex items-center">

@@ -8,7 +8,7 @@ const Banner = () => {
           <p className="text-gray-500 py-6 text-sm font-normal animate-pulse">
             WELCOME TO OUR STORE
           </p>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center ">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center leading-tight">
             Buy Your Favorites Books <br />
             <span className="text-blue-600"> With Low Prices</span>
           </h1>
