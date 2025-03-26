@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* logo */}
         <div>
           <Link to="/" className="text-xl md:text-2xl font-bold text-black">
-            Books
+            Books <span className="text-blue-500">Shop</span>
           </Link>
         </div>
         {/* nav item */}

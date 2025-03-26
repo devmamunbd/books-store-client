@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import { Blog } from "./pages/Blog.jsx";
 import Shop from "./pages/Shop.jsx";
+import SingleBook from "./component/SingleBook.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/book/:id" element={<SingleBook />} />
       </Route>
     </Routes>
   </BrowserRouter>
